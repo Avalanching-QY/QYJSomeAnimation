@@ -15,6 +15,9 @@
 		34490DA01E87B8C700D2523A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34490D9E1E87B8C700D2523A /* LaunchScreen.storyboard */; };
 		34490DAB1E87B8C700D2523A /* QYJSomeAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34490DAA1E87B8C700D2523A /* QYJSomeAnimationTests.m */; };
 		34490DB61E87B8C700D2523A /* QYJSomeAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34490DB51E87B8C700D2523A /* QYJSomeAnimationUITests.m */; };
+		3482461D1E89EA4700541FA8 /* AnimationSelectListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3482461C1E89EA4700541FA8 /* AnimationSelectListTableViewController.m */; };
+		348246201E89EDDF00541FA8 /* QYJTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3482461F1E89EDDF00541FA8 /* QYJTransitionAnimation.m */; };
+		348246231E89F43D00541FA8 /* NSString+ReplaceUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 348246221E89F43D00541FA8 /* NSString+ReplaceUnicode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		34490DB11E87B8C700D2523A /* QYJSomeAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QYJSomeAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34490DB51E87B8C700D2523A /* QYJSomeAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYJSomeAnimationUITests.m; sourceTree = "<group>"; };
 		34490DB71E87B8C700D2523A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3482461B1E89EA4700541FA8 /* AnimationSelectListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSelectListTableViewController.h; sourceTree = "<group>"; };
+		3482461C1E89EA4700541FA8 /* AnimationSelectListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSelectListTableViewController.m; sourceTree = "<group>"; };
+		3482461E1E89EDDF00541FA8 /* QYJTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYJTransitionAnimation.h; sourceTree = "<group>"; };
+		3482461F1E89EDDF00541FA8 /* QYJTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYJTransitionAnimation.m; sourceTree = "<group>"; };
+		348246211E89F43D00541FA8 /* NSString+ReplaceUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ReplaceUnicode.h"; sourceTree = "<group>"; };
+		348246221E89F43D00541FA8 /* NSString+ReplaceUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReplaceUnicode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		34490D8F1E87B8C700D2523A /* QYJSomeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3482461A1E89E96F00541FA8 /* QYJTransitionAnimation */,
 				34490D931E87B8C700D2523A /* AppDelegate.h */,
 				34490D941E87B8C700D2523A /* AppDelegate.m */,
 				34490D961E87B8C700D2523A /* ViewController.h */,
 				34490D971E87B8C700D2523A /* ViewController.m */,
+				348246211E89F43D00541FA8 /* NSString+ReplaceUnicode.h */,
+				348246221E89F43D00541FA8 /* NSString+ReplaceUnicode.m */,
 				34490D991E87B8C700D2523A /* Main.storyboard */,
 				34490D9C1E87B8C700D2523A /* Assets.xcassets */,
 				34490D9E1E87B8C700D2523A /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				34490DB71E87B8C700D2523A /* Info.plist */,
 			);
 			path = QYJSomeAnimationUITests;
+			sourceTree = "<group>";
+		};
+		3482461A1E89E96F00541FA8 /* QYJTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3482461B1E89EA4700541FA8 /* AnimationSelectListTableViewController.h */,
+				3482461C1E89EA4700541FA8 /* AnimationSelectListTableViewController.m */,
+				3482461E1E89EDDF00541FA8 /* QYJTransitionAnimation.h */,
+				3482461F1E89EDDF00541FA8 /* QYJTransitionAnimation.m */,
+			);
+			path = QYJTransitionAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +298,10 @@
 			files = (
 				34490D981E87B8C700D2523A /* ViewController.m in Sources */,
 				34490D951E87B8C700D2523A /* AppDelegate.m in Sources */,
+				348246231E89F43D00541FA8 /* NSString+ReplaceUnicode.m in Sources */,
+				3482461D1E89EA4700541FA8 /* AnimationSelectListTableViewController.m in Sources */,
 				34490D921E87B8C700D2523A /* main.m in Sources */,
+				348246201E89EDDF00541FA8 /* QYJTransitionAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +531,7 @@
 				34490DBC1E87B8C700D2523A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34490DBD1E87B8C700D2523A /* Build configuration list for PBXNativeTarget "QYJSomeAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +540,7 @@
 				34490DBF1E87B8C700D2523A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34490DC01E87B8C700D2523A /* Build configuration list for PBXNativeTarget "QYJSomeAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +549,7 @@
 				34490DC21E87B8C700D2523A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
